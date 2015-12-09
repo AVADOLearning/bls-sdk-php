@@ -1,0 +1,6 @@
+# Composer-managed dependencies
+/composer.lock
+/vendor/
+
+# Test suite configuration
+/test/unit/config.php

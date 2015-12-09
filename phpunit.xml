@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.5/phpunit.xsd"
+         bootstrap="test/unit/bootstrap.php">
+    <!--
+      * BLS SDK for PHP.
+      *
+      * @author Luke Carrier <luke.carrier@floream.com>
+      * @copyright 2015 Floream Limited
+      -->
+    <testsuites>
+        <testsuite name="BLS SDK for PHP">
+            <directory suffix="Test.php">test/unit</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
