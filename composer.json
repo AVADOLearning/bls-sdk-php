@@ -2,10 +2,12 @@
     "autoload": {
         "psr-4": {
             "Floream\\BusinessLogicServices\\": [
-                "lib", "generatedlib"
+                "lib",
+                "generatedlib"
             ]
         }
     },
+
     "require-dev": {
         "monolog/monolog": "1.13.*",
         "phpunit/phpunit": "4.5.*",
