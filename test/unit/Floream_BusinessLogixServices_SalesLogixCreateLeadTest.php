@@ -4,7 +4,7 @@
  * BLS SDK for PHP.
  *
  * @author Luke Carrier <luke.carrier@avadolearning.com>
- * @copyright 2015 AVADO Learning
+ * @copyright 2017 AVADO Learning
  */
 
 use AvadoLearning\BusinessLogicServices\SalesLogixService\ArrayOfContact;
