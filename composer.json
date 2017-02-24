@@ -1,4 +1,23 @@
 {
+    "name": "avadolearning/bls-sdk-php",
+    "description": "A library for integrating your PHP application with AVADO's Business Logic Services API.",
+    "keywords": [
+        "sdk"
+    ],
+    "homepage": "https://github.com/AVADOLearning/bls-sdk-php",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Luke Carrier",
+            "email": "luke@carrier.im",
+            "homepage": "http://luke.carrier.im"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/AVADOLearning/bls-sdk-php/issues",
+        "wiki": "https://github.com/AVADOLearning/bls-sdk-php/wiki"
+    },
+
     "autoload": {
         "psr-4": {
             "Floream\\BusinessLogicServices\\": [
