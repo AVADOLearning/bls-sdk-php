@@ -3,16 +3,16 @@
 /**
  * BLS SDK for PHP.
  *
- * @author Luke Carrier <luke.carrier@floream.com>
- * @copyright 2015 Floream Limited
+ * @author Luke Carrier <luke.carrier@avadolearning.com>
+ * @copyright 2015 AVADO Learning
  */
 
-namespace Floream\BusinessLogicServices\RequestPreprocessor;
+namespace AvadoLearning\BusinessLogicServices\RequestPreprocessor;
 
 use DOMDocument;
 use DOMXPath;
-use Floream\BusinessLogicServices\Exception\RequestPreprocessorException;
-use Floream\BusinessLogicServices\RequestPreprocessor;
+use AvadoLearning\BusinessLogicServices\Exception\RequestPreprocessorException;
+use AvadoLearning\BusinessLogicServices\RequestPreprocessor;
 
 /**
  * Inserts the BLS authentication token into the request header.
@@ -49,7 +49,7 @@ class BlsAuthTokenRequestPreprocessor implements RequestPreprocessor {
     }
 
     /**
-     * @override \Floream\BusinessLogicServices\RequestPreprocessor
+     * @override \AvadoLearning\BusinessLogicServices\RequestPreprocessor
      */
     public function preprocess(DOMDocument $document, $location, $action,
                                $version, $oneway) {

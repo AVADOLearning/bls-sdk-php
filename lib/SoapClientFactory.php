@@ -3,13 +3,13 @@
 /**
  * BLS SDK for PHP.
  *
- * @author Luke Carrier <luke.carrier@floream.com>
- * @copyright 2015 Floream Limited
+ * @author Luke Carrier <luke.carrier@avadolearning.com>
+ * @copyright 2015 AVADO Learning
  */
 
-namespace Floream\BusinessLogicServices;
+namespace AvadoLearning\BusinessLogicServices;
 
-use Floream\BusinessLogicServices\RequestPreprocessor;
+use AvadoLearning\BusinessLogicServices\RequestPreprocessor;
 
 /**
  * SOAP client factory.
@@ -25,7 +25,7 @@ class SoapClientFactory {
      *
      * @var string
      */
-    const CLIENT_CLASS_FORMAT = '\Floream\BusinessLogicServices\%sService\%s';
+    const CLIENT_CLASS_FORMAT = '\AvadoLearning\BusinessLogicServices\%sService\%s';
 
     /**
      * WSDL file format.
@@ -51,7 +51,7 @@ class SoapClientFactory {
     /**
      * Services.
      *
-     * @var \Floream\BusinessLogicServices\RequestPreprocessor[]
+     * @var \AvadoLearning\BusinessLogicServices\RequestPreprocessor[]
      */
     protected $requestPreprocessors;
 
@@ -61,7 +61,7 @@ class SoapClientFactory {
      * @param string                                               $baseUrl
      * @param mixed[]                                              $options
      * @param string[]                                             $services
-     * @param \Floream\BusinessLogicServices\RequestPreprocessor[] $requestPreprocessors
+     * @param \AvadoLearning\BusinessLogicServices\RequestPreprocessor[] $requestPreprocessors
      */
     public function __construct($baseUrl, $options, $services, $requestPreprocessors) {
         $this->baseUrl  = $baseUrl;
@@ -76,7 +76,7 @@ class SoapClientFactory {
     /**
      * Add a request preprocessor.
      *
-     * @param \Floream\BusinessLogicServices\RequestPreprocessor $requestPreprocessor
+     * @param \AvadoLearning\BusinessLogicServices\RequestPreprocessor $requestPreprocessor
      *
      * @return void
      */
@@ -100,7 +100,7 @@ class SoapClientFactory {
      *
      * @param string $serviceName
      *
-     * @return \Floream\BusinessLogicServices\SoapClient
+     * @return \AvadoLearning\BusinessLogicServices\SoapClient
      */
     public function getInstance($serviceName, $optionOverrides=array()) {
         $className = $this->getClassName($serviceName);

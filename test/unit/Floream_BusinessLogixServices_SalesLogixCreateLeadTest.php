@@ -3,23 +3,23 @@
 /**
  * BLS SDK for PHP.
  *
- * @author Luke Carrier <luke.carrier@floream.com>
- * @copyright 2015 Floream Limited
+ * @author Luke Carrier <luke.carrier@avadolearning.com>
+ * @copyright 2015 AVADO Learning
  */
 
-use Floream\BusinessLogicServices\SalesLogixService\ArrayOfContact;
-use Floream\BusinessLogicServices\SalesLogixService\ArrayOfstring;
-use Floream\BusinessLogicServices\SalesLogixService\Contact;
-use Floream\BusinessLogicServices\SalesLogixService\ContactGender;
-use Floream\BusinessLogicServices\SalesLogixService\ContactTitle;
-use Floream\BusinessLogicServices\SalesLogixService\ContactType;
-use Floream\BusinessLogicServices\SalesLogixService\CreateLead;
-use Floream\BusinessLogicServices\SalesLogixService\CreateLeadEntitiesBrandAssociation;
-use Floream\BusinessLogicServices\SalesLogixService\CreateLeadEntitiesCreateLeadRequest;
-use Floream\BusinessLogicServices\SalesLogixService\CreateLeadEntitiesLeadSource;
-use Floream\BusinessLogicServices\SalesLogixService\CreateLeadEntitiesSubmissionType;
-use Floream\BusinessLogicServices\SalesLogixService\ResponseStatus;
-use Floream\BusinessLogicServices\SalesLogixService\SalesLogix;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\ArrayOfContact;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\ArrayOfstring;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\Contact;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\ContactGender;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\ContactTitle;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\ContactType;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\CreateLead;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\CreateLeadEntitiesBrandAssociation;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\CreateLeadEntitiesCreateLeadRequest;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\CreateLeadEntitiesLeadSource;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\CreateLeadEntitiesSubmissionType;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\ResponseStatus;
+use AvadoLearning\BusinessLogicServices\SalesLogixService\SalesLogix;
 
 class SalesLogixCreateLeadTest
         extends Floream_BusinessLogicServices_Framework_TestCase {

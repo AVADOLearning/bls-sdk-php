@@ -3,11 +3,11 @@
 /**
  * BLS SDK for PHP.
  *
- * @author Luke Carrier <luke.carrier@floream.com>
- * @copyright 2015 Floream Limited
+ * @author Luke Carrier <luke.carrier@avadolearning.com>
+ * @copyright 2015 AVADO Learning
  */
 
-namespace Floream\BusinessLogicServices\Exception;
+namespace AvadoLearning\BusinessLogicServices\Exception;
 
 use Exception;
 

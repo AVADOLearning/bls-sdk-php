@@ -4,8 +4,8 @@
 /**
  * BLS SDK for PHP.
  *
- * @author Luke Carrier <luke.carrier@floream.com>
- * @copyright 2015 Floream Limited
+ * @author Luke Carrier <luke.carrier@avadolearning.com>
+ * @copyright 2015 AVADO Learning
  */
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
@@ -26,7 +26,7 @@ $services = array(
 foreach ($services as $service) {
     $descriptor = "{$url}/{$service}.svc";
     $outputdir  = dirname(__DIR__) . "/generatedlib/{$service}Service";
-    $namespace  = "Floream\BusinessLogicServices\\{$service}Service";
+    $namespace  = "AvadoLearning\BusinessLogicServices\\{$service}Service";
 
     $logger->info("Generating model for {$service}");
     $logger->debug("Using WSDL descriptor {$descriptor}");
@@ -42,7 +42,7 @@ foreach ($services as $service) {
         'inputFile'       => $descriptor,
         'outputDir'       => $outputdir,
         'namespaceName'   => $namespace,
-        'soapClientClass' => '\Floream\BusinessLogicServices\SoapClient',
+        'soapClientClass' => '\AvadoLearning\BusinessLogicServices\SoapClient',
     ));
 
     $generator = new Generator();

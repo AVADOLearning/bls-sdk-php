@@ -3,13 +3,13 @@
 /**
  * BLS SDK for PHP.
  *
- * @author Luke Carrier <luke.carrier@floream.com>
- * @copyright 2015 Floream Limited
+ * @author Luke Carrier <luke.carrier@avadolearning.com>
+ * @copyright 2015 AVADO Learning
  */
 
-use Floream\BusinessLogicServices\SoapClientFactory;
-use Floream\BusinessLogicServices\RequestPreprocessor\BlsAuthTokenRequestPreprocessor;
-use Floream\BusinessLogicServices\RequestPreprocessor\WsaRequestPreprocessor;
+use AvadoLearning\BusinessLogicServices\SoapClientFactory;
+use AvadoLearning\BusinessLogicServices\RequestPreprocessor\BlsAuthTokenRequestPreprocessor;
+use AvadoLearning\BusinessLogicServices\RequestPreprocessor\WsaRequestPreprocessor;
 
 class Floream_BusinessLogicServices_Framework_TestCase
         extends PHPUnit_Framework_TestCase {
@@ -18,7 +18,7 @@ class Floream_BusinessLogicServices_Framework_TestCase
      *
      * @param string $serviceName
      *
-     * @return Floream\BusinessLogicServices\SoapClient
+     * @return AvadoLearning\BusinessLogicServices\SoapClient
      */
     protected function getSoapClient($serviceName) {
         $factory = $this->getSoapClientFactory();
@@ -32,7 +32,7 @@ class Floream_BusinessLogicServices_Framework_TestCase
      * The client factory accepts all of our arguments once and handles passing
      * dependencies to the clients on instantiation.
      *
-     * @return \Floream\BusinessLogicServices\SoapClientFactory
+     * @return \AvadoLearning\BusinessLogicServices\SoapClientFactory
      */
     protected function getSoapClientFactory() {
         $factory = new SoapClientFactory(BLS_URL, array(

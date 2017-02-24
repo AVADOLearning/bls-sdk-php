@@ -3,11 +3,11 @@
 /**
  * BLS SDK for PHP.
  *
- * @author Luke Carrier <luke.carrier@floream.com>
- * @copyright 2015 Floream Limited
+ * @author Luke Carrier <luke.carrier@avadolearning.com>
+ * @copyright 2015 AVADO Learning
  */
 
-namespace Floream\BusinessLogicServices;
+namespace AvadoLearning\BusinessLogicServices;
 
 use DOMDocument;
 use ReflectionClass;
@@ -31,14 +31,14 @@ class SoapClient extends PhpSoapClient {
     /**
      * Request preprocessors.
      *
-     * @var \Floream\BusinessLogicServices\RequestPreprocessor[]
+     * @var \AvadoLearning\BusinessLogicServices\RequestPreprocessor[]
      */
     protected $requestPreprocessors = array();
 
     /**
      * Add a preprocessor to the stack.
      *
-     * @param \Floream\BusinessLogicServices\RequestPreprocessor $preprocessor
+     * @param \AvadoLearning\BusinessLogicServices\RequestPreprocessor $preprocessor
      *
      * @return void
      */

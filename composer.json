@@ -20,7 +20,7 @@
 
     "autoload": {
         "psr-4": {
-            "Floream\\BusinessLogicServices\\": [
+            "AvadoLearning\\BusinessLogicServices\\": [
                 "lib",
                 "generatedlib"
             ]

@@ -1,7 +1,7 @@
 # BLS SDK for PHP
 
-This library contains an library for integrating your PHP application with
-Floream's Business Logic Services API.
+A library for integrating your PHP application with AVADO's Business Logic
+Services API.
 
 ## Installation
 
@@ -28,7 +28,7 @@ This isn't yet implemented.
 First obtain an instance of the ```SoapClientFactory```. The factory handles
 passing parameters to each of the client classes:
 
-    use Floream\BusinessLogicServices\SoapClientFactory;
+    use AvadoLearning\BusinessLogicServices\SoapClientFactory;
 
     // These values should come from your configuration
     define('BLS_URL',        'https://test.example.com');
@@ -62,7 +62,7 @@ on the disk, you might instantiate the SalesLogix client as follows:
     ));
 
 Either way, ```$client``` will now be an instance of
-```Floream\BusinessLogicServices\SalesLogixService\SalesLogix```, and it will be
+```AvadoLearning\BusinessLogicServices\SalesLogixService\SalesLogix```, and it will be
 possible to call methods like ```CreateLead```. Examples can be found in the
 ```/test/unit``` directory of this repository.
 
