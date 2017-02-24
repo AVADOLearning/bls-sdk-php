@@ -26,7 +26,7 @@ $services = array(
 foreach ($services as $service) {
     $descriptor = sprintf('%s/%s.svc', BLS_URL, $service);
     $outputdir  = dirname(__DIR__) . "/generatedlib/{$service}Service";
-    $namespace  = "AvadoLearning\BusinessLogicServices\\{$service}Service";
+    $namespace  = "AvadoLearning\\BusinessLogicServices\\{$service}Service";
 
     $logger->info("Generating model for {$service}");
     $logger->debug("Using WSDL descriptor {$descriptor}");
