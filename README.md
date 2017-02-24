@@ -3,6 +3,8 @@
 A library for integrating your PHP application with AVADO's Business Logic
 Services API.
 
+* * *
+
 ## Installation
 
 Support for different installation methods is still in the works. Reach out to
