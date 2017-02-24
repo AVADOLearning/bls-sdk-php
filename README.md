@@ -11,7 +11,9 @@ guidance.
 
 ### With Composer and Packagist (recommended)
 
-Add the following line to the `require` section of your `composer.json`:
+We have [an example](https://github.com/AVADOLearning/bls-sdk-php-example) of
+how to use the SDK in this configuration, but it's fairly straightforward --
+just add the following line to the `require` section of your `composer.json`:
 
 ```json
 "avadolearning/bls-sdk-php": "1.0.*"
