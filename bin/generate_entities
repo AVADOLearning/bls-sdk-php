@@ -9,6 +9,7 @@
  */
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
+require_once dirname(__DIR__) . '/etc/config.php';
 
 use Monolog\Logger;
 use Wsdl2PhpGenerator\Config;
@@ -18,13 +19,12 @@ ini_set('soap.wsdl_cache_enabled', 0);
 
 $logger = new Logger('generate_entities');
 
-$url      = 'https://testapi.homelearningcollege.com';
 $services = array(
     'SalesLogix',
 );
 
 foreach ($services as $service) {
-    $descriptor = "{$url}/{$service}.svc";
+    $descriptor = sprintf('%s/%s.svc', BLS_URL, $service);
     $outputdir  = dirname(__DIR__) . "/generatedlib/{$service}Service";
     $namespace  = "AvadoLearning\BusinessLogicServices\\{$service}Service";
 

@@ -3,4 +3,4 @@
 /vendor/
 
 # Test suite configuration
-/test/unit/config.php
+/etc/config.php
