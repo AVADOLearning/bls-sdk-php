@@ -49,7 +49,7 @@ class SalesLogixCreateLeadTest
         $request->setLeadSource($leadSource);
         $request = new CreateLead($request);
 
-        $client   = $this->getSoapClient('saleslogix');
+        $client   = $this->getSoapClient('SalesLogix');
         $response = $client->CreateLead($request);
         $result   = $response->getCreateLeadResult();
 
